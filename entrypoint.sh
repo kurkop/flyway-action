@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
-echo $FLYWAY_CONF > /flyway/conf/flyway.conf
+echo $INPUT_FLYWAY_CONF > /flyway/conf/flyway.conf
 
-cp $FLYWAY_SQL/* /flyway/sql
+cp $INPUT_FLYWAY_SQL/* /flyway/sql
 
 flyway migrate
