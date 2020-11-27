@@ -4,9 +4,11 @@ This action gets the config file from environment variables and run `flyway migr
 
 ## Inputs
 
-### `flyway_conf`
+### `flyway_conf_sha`
 
-**Required** Content of flyway.conf file. Default `""`.
+**Required** Content of flyway.conf in base64 file. Default `""`.
+
+Uses `cat flyway.conf | base64` to create the flyway_conf_sha
 
 ### `flyway_sql`
 
@@ -18,5 +20,5 @@ This action gets the config file from environment variables and run `flyway migr
 ```yaml
 uses: kurkop/flyway-action@master
 with:
-  flyway_conf: ${{ secrets.FLYWAY_CONF }}
+  flyway_conf_sha: ${{ secrets.FLYWAY_CONF }}
 ```

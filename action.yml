@@ -1,8 +1,8 @@
 name: 'Flyway Migration'
 description: 'Run migrations using your Github Action'
 inputs:
-  flyway_conf:
-    description: 'Flyway Configuration'
+  flyway_conf_sha:
+    description: 'Flyway Configuration in Base64'
     required: true
     default: ''
   flyway_sql:
