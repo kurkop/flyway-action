@@ -1,0 +1,14 @@
+name: 'Flyway Migration'
+description: 'Run migrations using your Github Action'
+inputs:
+  flyway_conf:
+    description: 'Flyway Configuration'
+    required: true
+    default: ''
+  flyway_sql:
+    description: 'Flyway SQL path'
+    required: false
+    default: './flyway/sql'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
