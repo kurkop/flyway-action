@@ -15,6 +15,8 @@ This action gets the config file from environment variables and run `flyway migr
 
 ## Example usage
 
+```yaml
 uses: kurkop/flyway-action@master
 with:
   flyway_conf: ${{ secrets.FLYWAY_CONF }}
+```
