@@ -1,6 +1,7 @@
-# Flyway Migration Action
+# Flyway Action
 
-This action gets the config file from environment variables and run `flyway migrate` command.
+This action gets the config file from environment variables and run `flyway info` command.
+You should add next commands in the run section.
 
 ## Inputs
 
